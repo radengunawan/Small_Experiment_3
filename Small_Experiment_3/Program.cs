@@ -16,7 +16,7 @@ for (int i = 0; i < names.Count; i++)
     a1.Add (new Author { ID = IDs[i].ToString(), Name = names[i] });
 }
 
-Console.WriteLine("Before removal");
+Console.WriteLine("Before removal\n");
 
 foreach (Author item in a1)
 {
@@ -29,11 +29,12 @@ foreach (Author item in a1)
     {
         a1.Remove (item);
         break;
+        //continue;
 
     }
 }
 
-Console.WriteLine("AFTER removal");
+Console.WriteLine("\nAFTER removal");
 
 foreach (Author item in a1)
 {
