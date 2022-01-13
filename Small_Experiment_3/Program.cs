@@ -27,8 +27,11 @@ Console.WriteLine("Before removal\n");
 
 foreach (Author item in a1)
 {
-    Console.WriteLine(item + " (" + item.GetType() + ")");
+    //Console.WriteLine(item + " (" + item.GetType() + ")");
     Console.WriteLine(item.Name + " (" + item.Name.GetType() + ")" + " -- " + item.ID + " (" + item.ID.GetType() + ")");
+    //check
+    Console.WriteLine(String.IsNullOrEmpty(item.Name)); // must tbe string
+    Console.WriteLine(String.IsNullOrEmpty(item.ID)); // must tbe string
 }
 
 foreach (Author item in a1)
@@ -47,6 +50,9 @@ Console.WriteLine("\nAFTER removal");
 foreach (Author item in a1)
 {
 Console.WriteLine(item.Name + " ("+ item.Name.GetType()+ ")"+" -- " + item.ID + " (" + item.ID.GetType() + ")");
+    //check
+    Console.WriteLine(String.IsNullOrEmpty(item.Name)); // must tbe string
+    Console.WriteLine(String.IsNullOrEmpty(item.ID)); // must tbe string
 }
 
 
